@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LocalStorage</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width"> -->
+	<link rel="stylesheet" media="all" href="assets/styles/app.css" />
+</head>
+
+<!-- ########################################################################### -->
+<!-- ########################################################################### -->
+<!-- ########################################################################### -->
+
+<body>
+
+<div class="task-wrapper">       
+      <ul id="tasks"></ul>    
+</div>
+<div class="form-wrapper">
+  <form class="add-items">
+    <button class="open-button" aria-label="Open Modal Box" tabindex="1">Add New Item</button>
+    <input id="newTaskTitle" class="tabindex" placeholder="title" required tabindex="-1">
+    <!--     
+	<input id="newTaskDescription" class="tabindex" placeholder="description" tabindex="-1"> 
+	-->
+    <input id="newTaskSubmit" type="submit" value="+ Add Item" class="tabindex" tabindex="-1">
+  </form>
+  <div class="toggle-wrapper">
+    <label class="switch tabindex">
+      <input type="checkbox" id="ShowCompletedTasks" class="tabindex" tabindex="-1">
+      <span class="slider">Show Completed Tasks</span>
+    </label>      
+    <button class="voice-input tabindex" aria-label="voice input" tabindex="-1" data-tip="Click and hold and speak!">
+      <img src="assets/images/microphone.png" />
+    </button>
+  </div>
+  <button class="close-button tabindex" aria-label="Close Modal Box" tabindex="-1">&times;</button>
+</div>
+
+<!-- ########################################################################### -->
+<!-- ########################################################################### -->
+<!-- ########################################################################### -->
+	
+<script src="assets/scripts/app.js"></script>
+
+</body>
+</html>
